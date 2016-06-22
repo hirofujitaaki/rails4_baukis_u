@@ -34,6 +34,7 @@ development:
   # The password associated with the postgres role (username).
   #password:
 
+
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
@@ -82,4 +83,4 @@ production:
   <<: *default
   database: baukis_u_production
   username: vagrant
-  password: <%= ENV['BAUKIS_U_DATABASE_PASSWORD'] %>
+  password:
